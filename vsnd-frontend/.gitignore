@@ -1,25 +1,56 @@
-# Compiled class file
-*.class
 
-# Log file
-*.log
+Skip to content
 
-# BlueJ files
-*.ctxt
+    Pull requests
+    Issues
+    Marketplace
+    Explore
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    @linuxbender
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+0
+0
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+    0
+
+linuxbender/react-nd
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+Settings
+react-nd/react-and-redux/readable/.gitignore
+87ce2f3 25 days ago
+@linuxbender linuxbender core: remove typescript setup
+77 lines (56 sloc) 1.24 KB
+.DS_Store
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# git rm --cached .idea/workspace.xml
+.idea/workspace.xml
+
+*lock*
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -70,3 +101,19 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+
+Press h to open a hovercard with more details.

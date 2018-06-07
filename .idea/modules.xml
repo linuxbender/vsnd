@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/vsnd.iml" filepath="$PROJECT_DIR$/.idea/vsnd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vsnd-frontend/vsnd-frontend.iml" filepath="$PROJECT_DIR$/vsnd-frontend/vsnd-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vsnd-backend/winterthur.iml" filepath="$PROJECT_DIR$/vsnd-backend/winterthur.iml" />
+    </modules>
+  </component>
+</project>
