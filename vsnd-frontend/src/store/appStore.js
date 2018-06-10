@@ -1,7 +1,7 @@
 import {applyMiddleware, compose, createStore} from 'redux'
 import {loggerMiddleware} from '../middleware/loggerMiddleware';
-import {T_Store} from '../utils/appTypes';
 import rootReducer from '../reducers';
+import {T_Store} from '../utils/appTypes';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

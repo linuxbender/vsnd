@@ -4,7 +4,8 @@ import partnerInfoReducer from './partnerInfoReducer';
 import systemInfoReducer from './systemInfoReducer';
 import uiReducer from './uiReducer';
 
-const reducers = combineReducers({ ...T_RootReducer,
+const reducers = combineReducers({
+    ...T_RootReducer,
     ui: uiReducer,
     systemInfo: systemInfoReducer,
     partnerInfo: partnerInfoReducer

@@ -2,7 +2,7 @@ import {loggerMiddleware} from './loggerMiddleware';
 
 describe('Logger Middleware', () => {
 
-    let create =  undefined;
+    let create = undefined;
 
     beforeEach(() => {
         create = () => {
@@ -16,13 +16,13 @@ describe('Logger Middleware', () => {
         }
     });
 
-    it('appLogger is not undefined', ()=>{
+    it('appLogger is not undefined', () => {
         const appLogger = loggerMiddleware[0];
         expect(appLogger).not.toBeUndefined();
     });
 
     it('loggerMiddleware', () => {
-        const { next, invoke } = create();
+        const {next, invoke} = create();
         const action = {type: 'TEST'};
         invoke(action);
         expect(next).toHaveBeenCalledWith(action)

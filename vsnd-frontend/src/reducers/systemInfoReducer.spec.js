@@ -20,7 +20,7 @@ describe('SystemInfo Reducer', () => {
 
     it('should Handle LOAD_SYSTEM_INFO', () => {
         let newSystemInfo = T_SystemInfo;
-        newSystemInfo.backendVersion ='0.0.1';
+        newSystemInfo.backendVersion = '0.0.1';
         const systemInfoState = systemInfoReducer(undefined, loadSystemInfo(newSystemInfo));
         expect(systemInfoState.backendVersion).toBe(newSystemInfo.backendVersion);
     });

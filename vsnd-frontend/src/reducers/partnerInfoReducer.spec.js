@@ -20,9 +20,9 @@ describe('PartnerInfo Reducer', () => {
 
     it('should Handle LOAD_PARTNER_INFO', () => {
         let newPartnerInfo = T_PartnerInfo;
-        newPartnerInfo.id ='42';
+        newPartnerInfo.id = '42';
         newPartnerInfo.firstName = 'John';
-        newPartnerInfo.name ='Doe';
+        newPartnerInfo.name = 'Doe';
         const partnerInfoState = partnerInfoReducer(undefined, loadPartnerInfo(newPartnerInfo));
 
         expect(partnerInfoState.id).toBe(newPartnerInfo.id);
