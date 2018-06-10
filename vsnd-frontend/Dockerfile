@@ -9,9 +9,9 @@ FROM nginx:1.14-alpine
 
 MAINTAINER Team Coblerone <coblerone@dev.ch>
 
-RUN mkdir /etc/nginx/ssl/
+RUN mkdir /etc/nginx/cert
 COPY --from=build-deps src/app/build /usr/share/nginx/html
-COPY cert /etc/nginx/cert
+COPY cert/dev /etc/nginx/cert
 COPY default.conf /etc/nginx/conf.d/
 
 CMD ["nginx", "-g", "daemon off;"]
