@@ -1,5 +1,5 @@
 import {T_PartnerInfo} from '../utils/appTypes';
-import {LOAD_PARTNER_INFO, loadPartnerInfo} from './partnerInfo';
+import {LOAD_PARTNER_INFO, loadPartnerInfo} from './partnerInfoAction';
 
 describe('PartnerInfo Actions', () => {
     it('should create an action to load partnerInfo', () => {

@@ -1,4 +1,4 @@
-import {LOAD_PARTNER_INFO} from '../actions/partnerInfo';
+import {LOAD_PARTNER_INFO} from '../actions/partnerInfoAction';
 import {T_Store} from '../utils/appTypes';
 
 const partnerInfoReducer = (state = T_Store.partnerInfo, action) => {

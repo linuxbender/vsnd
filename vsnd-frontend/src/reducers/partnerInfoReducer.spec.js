@@ -1,4 +1,4 @@
-import {loadPartnerInfo} from '../actions/partnerInfo';
+import {loadPartnerInfo} from '../actions/partnerInfoAction';
 import {T_PartnerInfo} from '../utils/appTypes';
 import partnerInfoReducer from './partnerInfoReducer';
 
