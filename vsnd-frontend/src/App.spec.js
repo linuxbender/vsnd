@@ -1,14 +1,26 @@
 import {shallow} from 'enzyme';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe('VSND App', () => {
 
-it('renders without crashing', () => {
-    shallow(<App />);
+    let mountedApp = undefined;
+
+    beforeEach(() => {
+        mountedApp = shallow(<App/>)
+    });
+
+    it('renders without crashing', () => {
+        shallow(<App/>);
+    });
+
+    it('renders a Button in the app', () => {
+        const mountedButton = mountedApp.find('Button');
+        expect(mountedButton.length).toBe(1);
+    });
+
+    it('renders a Header in the app', () => {
+        const mountedButton = mountedApp.find('Header');
+        expect(mountedButton.length).toBe(1);
+    });
 });
