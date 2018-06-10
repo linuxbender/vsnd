@@ -14,17 +14,17 @@ describe('UI Reducer', () => {
     });
 
     it('should return the initial state', () => {
-        const ui = uiReducer(undefined, {type: 'DEMO'});
-        expect(ui).toBe(T_UserInterface);
+        const uiState = uiReducer(undefined, {type: 'DEMO'});
+        expect(uiState).toBe(T_UserInterface);
     });
 
     it('should Handle SHOW_UI_LOADER', () => {
-        const ui = uiReducer(undefined, showUiLoader());
-        expect(ui.isLoading).toBe(true);
+        const uiState = uiReducer(undefined, showUiLoader());
+        expect(uiState.isLoading).toBe(true);
     });
 
     it('should Handle HIDE_UI_LOADER', () => {
-        const ui = uiReducer({isLoading: true}, hideUiLoader());
-        expect(ui.isLoading).toBe(false);
+        const uiState = uiReducer({isLoading: true}, hideUiLoader());
+        expect(uiState.isLoading).toBe(false);
     });
 });
