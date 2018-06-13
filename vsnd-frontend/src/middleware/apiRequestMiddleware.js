@@ -46,7 +46,7 @@ const apiRequest = ({dispatch}) => next => action => {
                             onErrorHandler(dispatch, onError, error);
                         });
                 default:
-                    onErrorHandler(dispatch, onError, 'apiRequest: no HTTP method found');
+                    onErrorHandler(dispatch, onError, '[Middleware] apiRequest: no HTTP method found');
             }
         } catch (err) {
             dispatch(hideUiLoader())
