@@ -9,13 +9,14 @@ const translationService = (key, ...params) => {
         {key: 'global.b', value: ' Title B'},
         {key: 'global.c', value: ' Title C'},
         {key: 'global.d', value: ` Title D ${param(0)}`},
-        {key: 'global.e', value: ` Title E ${param(0)} , was geht ab ${param(1)} ${param(2)}`}
+        {key: 'global.e', value: ` Title E, 1 arg.. ${param(0)} , 2 arg.. ${param(1)} 3 arg ${param(2)}`}
     ];
     const item = listEng.filter(i => i.key === key)[0] || '';
 
     return item.value || '';
 };
 
+//const I18 = (props) => <Fragment>{props.translate(translationService)}</Fragment>;
 
 class I18 extends Component {
     render() {
